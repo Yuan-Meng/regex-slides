@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>cogsci131_02_14_section</title>
+
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-sketch theme-color-white-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section data-id="b4de81d8d303303831fb59c3c831d7cb"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 189px; height: auto;" data-block-id="3fafc846654eaaae8d8adf39d1f4f60b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>cog sci 131 section</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 287px; height: auto;" data-block-id="16454c255b1bfd3b67ffd1f472dc16c1"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11;">
+<h2><span style="color:rgb(0, 0, 0); font-size:36.6px">week 02/14/22</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 511px;" data-name="text-5399d4" data-block-id="6859a063d311b7e0c4d3677e306a32ed">
+<div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 77%;">
+<p style="color:rgb(0, 0, 0)">by yuan meng</p>
+</div>
+<grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 12;" class="cGcvT"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" style="mix-blend-mode: darken; position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 12;" class="cGcvT"></grammarly-extension>
+</div></section><section data-id="20ad713e9b6cc43b0733c2cf5daf3715"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 189px; height: auto;" data-block-id="c4fa296f842e08f4fef77922cbcaf392"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>agenda</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 263px; height: auto;" data-block-id="335af0f1a275ba27da021fa99dd3e475"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>get user inputs in jupyter </li>
+	<li>regex refresher + practice</li>
+	<li>hw4 prompt walkthrough </li>
+</ul>
+</div></div></section><section data-id="449829c9caf3ddea5264aed34b78c1ed"><div class="sl-block" data-block-type="text" style="width: 690px; left: 48px; top: 105px; height: auto;" data-block-id="c41d9750b84e6a33ba8a829aeea3364f">
+    <div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+        <h2>get user inputs </h2>
+    </div>
+    <grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="cGcvT"></grammarly-extension>
+    <grammarly-extension data-grammarly-shadow-root="true" style="mix-blend-mode: darken; position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 10;" class="cGcvT"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 406.412px; height: auto; left: 48px; top: 221.656px;" data-name="code-3b288a" data-block-id="4998b04ef909ae0b76ae42767970602d">
+    <div class="sl-block-style" style="z-index: 11; opacity: 0.98;">
+        <div class="sl-block-content notranslate fragment" data-highlight-theme="ir-black" style="z-index: 11; border-style: solid; border-radius: 4px;" data-code-frame="osx" data-code-autoheight="true" data-code-wrap="true" data-fragment-index="0">
+            <pre class="python" style="font-size: 15px; line-height: 18px;"><code style="padding: 15px;" data-line-numbers="" data-fragment-index="0">def pay_for_a_vehicle():
+    # enter plate number
+    plate = input("enter plate number: ")
+    # enter parking duration
+    duration = int(input("enter duration (min): "))
+    # print confirmation
+    print(f"Confirmation: {plate} is paid for {duration} min")
+    # return inputs for later use
+    return plate, duration</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" data-name="text-82c47b" data-block-id="26b1db3a0c4c98856e5638d281b21192" style="height: auto; width: 600px; left: 48px; top: 171px;">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: left;">
+        <p>use the <strong>input()</strong> function in jupyter</p>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" data-name="text-b6f7ca" data-block-id="f847eb00e4397221b87e570fb13ca132" style="height: auto; width: 94.7334px; left: 458.876px; top: 280px;">
+    <div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 70%;" data-fragment-index="1">
+        <p>store each user input in a variable</p>
+    </div>
+    <grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 15;" class="cGcvT"></grammarly-extension>
+    <grammarly-extension data-grammarly-shadow-root="true" style="mix-blend-mode: darken; position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 15;" class="cGcvT"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="text" data-name="text-0a6716" data-block-id="9bba2c35e0d90581d573571a30f2312e" style="height: auto; width: 102.452px; left: 455.017px; top: 483.086px;">
+    <div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 70%;" data-fragment-index="3">
+        <p>when you run it, you'll be asked to type inputs</p>
+    </div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-8da20b" data-block-id="fa6ff48c7d2830c9686545439e0c6044">
+    <div class="sl-block-content sl-block-group-content fragment" style="transform-origin: 366.168px 574.872px; z-index: 21;" data-fragment-index="3">
+        <div class="sl-block" data-block-type="drawing" data-name="drawing-641224" data-block-id="a5e1fbee13d6a0d9e09b907350ba1351" style="width: 180.776px; height: 12.5146px; left: 272.459px; top: 560.384px;">
+            <div class="sl-block-style" style="z-index: 22; filter: drop-shadow(rgb(28, 235, 123) 0px 0px 5px);">
+                <div class="sl-block-content" data-points="344.04 547.17,347.73 547.17,351.32 547.17,355.71 547.17,364.64 547.17,370.23 547.17,380.35 547.17,383.1 547.17,389.35 547.17,394.93 547.17,398.05 547.17,403.43 547.17,409.21 547.17,412.25 547.17,416.21 547.17,421.37 547.17,425.35 547.17,427.64 547.17,430.66 547.17,434.74 547.17,438.74 547.17,442.51 547.17,446.26 547.17,449.6 547.4,452.33 547.91,454.59 548.46,456.71 548.99,458.73 549.49,461.41 550.09,465.15 550.94,468.24 551.72,470.31 552.23,472.37 552.49,476.02 553.25,478.32 553.76,482 554.06,484.16 554.31,487.23 554.45,490.87 554.45,493.75 554.45,496.56 554.45,499.7 554.45,502.87 554.45,505.65 554.45,509.33 554.45,511.48 554.45,512.25 552.56" data-timestamp="1644800097927" style="z-index: 22;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="none" width="100%" height="100%" viewbox="341.82000732421875 544.9199829101562 170.02023315429688 11.77001953125">
+                        <path fill="rgb(28, 235, 123)" d="M 344.8471875 544.9238467529296 Q 344.85 544.92 346.5 544.93 348.15 544.94 350.02 544.97 351.88 545 354.53 545.11 357.19 545.22 361.06 545.44 364.93 545.66 368.36 545.66 371.78 545.66 375.83 545.67 379.88 545.67 381.97 545.67 384.06 545.67 386.99 545.67 389.91 545.67 392.45 545.64 394.98 545.61 396.91 545.54 398.84 545.47 401.48 545.48 404.12 545.48 406.68 545.49 409.24 545.49 410.99 545.43 412.74 545.36 414.82 545.34 416.9 545.32 419.29 545.33 421.68 545.34 423.91 545.3 426.13 545.26 428.68 545.19 431.22 545.13 433.2 545.13 435.18 545.14 437.15 545.14 439.12 545.14 441.01 545.14 442.91 545.14 444.75 545.15 446.6 545.17 448.3 545.29 450 545.41 451.72 545.71 453.44 546 455.77 546.5 458.09 547.01 460.26 547.5 462.44 548 464.18 548.43 465.93 548.86 467.63 549.25 469.34 549.64 471.32 550.01 473.29 550.37 475.35 550.77 477.41 551.16 480.21 551.53 483.01 551.89 485.4 552.04 487.78 552.19 489.8 552.21 491.82 552.23 494.38 552.22 496.93 552.21 498.49 552.21 500.05 552.21 502.03 552.22 504.02 552.23 506.73 551.74 509.45 551.25 510.78 551.84 512.12 552.43 511.74 553.84 511.37 555.25 509.92 555.1 508.47 554.95 508.39 553.49 508.31 552.04 509.74 551.73 511.16 551.42 511.69 552.78 512.21 554.14 510.93 555.33 509.64 556.53 506.83 556.6 504.02 556.67 502.03 556.68 500.05 556.69 498.49 556.69 496.93 556.69 494.37 556.68 491.8 556.67 489.7 556.67 487.6 556.68 485.12 556.51 482.64 556.34 479.64 555.95 476.63 555.57 474.61 555.22 472.58 554.87 470.48 554.44 468.38 554 466.65 553.59 464.92 553.18 462.19 552.57 459.46 551.96 457.13 551.37 454.8 550.78 452.49 550.25 450.18 549.71 448.36 549.49 446.54 549.27 444.72 549.24 442.91 549.2 441.01 549.2 439.12 549.2 437.15 549.2 435.18 549.2 433.2 549.21 431.22 549.21 428.68 549.15 426.13 549.08 423.91 549.04 421.68 549 419.29 549.01 416.9 549.02 414.82 549 412.74 548.98 410.99 548.91 409.24 548.85 406.68 548.85 404.12 548.86 401.48 548.86 398.84 548.87 396.91 548.8 394.98 548.73 392.45 548.7 389.91 548.67 386.99 548.67 384.06 548.67 381.97 548.67 379.88 548.67 375.83 548.67 371.78 548.68 368.36 548.68 364.93 548.68 361.06 548.9 357.19 549.12 354.53 549.23 351.88 549.34 350.02 549.37 348.15 549.4 346.5 549.41 344.85 549.42 344.44 549.42 344.04 549.42 343.69 549.36 343.35 549.31 343.03 549.15 342.72 548.99 342.47 548.74 342.22 548.49 342.06 548.18 341.9 547.86 341.85 547.52 341.79 547.17 341.85 546.82 341.9 546.48 342.06 546.16 342.22 545.85 342.47 545.6 342.72 545.35 343.03 545.19 343.35 545.03 343.69 544.98 344.04 544.92 344.44 544.92 Z"></path>
+                    </svg></div>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="drawing" data-name="drawing-865edd" data-block-id="b1c92109771a807ad7839fb62059a04a" style="width: 27.1286px; height: 29.7432px; left: 432.749px; top: 560px;">
+            <div class="sl-block-style" style="z-index: 23; filter: drop-shadow(rgb(28, 235, 123) 0px 0px 5px);">
+                <div class="sl-block-content" data-points="499.12 546.83,502.04 546.83,504.79 546.83,507.63 547.28,510.17 548.49,512.1 549.3,514.26 550.47,516.11 551.27,514.07 553.52,511.75 555.83,510.16 557.42,508.47 559.53,505.88 562.72,504.09 564.5,502.18 566.4,499.95 567.95,497.89 569.2,495.85 570.3,493.92 571.29,491.63 571.93" data-timestamp="1644800099416" style="z-index: 23;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="none" width="100%" height="100%" viewbox="492.5723876953125 544.558349609375 25.51446533203125 27.9735107421875">
+                        <path fill="rgb(28, 235, 123)" d="M 499.75875 544.5740782552084 Q 499.76 544.57 501.06 544.56 502.36 544.55 503.78 544.6 505.19 544.65 506.77 544.97 508.35 545.28 510.07 546.01 511.79 546.73 514.37 547.9 516.94 549.06 517.45 549.59 517.96 550.11 518.06 550.83 518.17 551.55 517.83 552.2 517.49 552.84 516.83 553.16 516.18 553.49 515.87 553.94 515.56 554.39 514.24 556.2 512.91 558.01 511.39 559.73 509.87 561.46 508.43 563.08 506.98 564.7 505.21 566.45 503.44 568.19 501.98 569.2 500.52 570.22 497.94 571.53 495.35 572.84 493.89 572.43 492.42 572.02 492.59 570.51 492.76 568.99 494.28 568.92 495.81 568.86 496.11 570.35 496.41 571.85 494.99 572.38 493.56 572.91 492.81 571.59 492.06 570.26 494.03 568.91 496.01 567.56 497.95 566.36 499.88 565.16 501.74 563.47 503.59 561.79 505.64 559.33 507.69 556.88 509.6 554.81 511.5 552.75 514.04 551.64 516.57 550.54 517.27 550.32 517.96 550.11 518.06 550.83 518.17 551.55 517.83 552.2 517.49 552.84 516.83 553.16 516.18 553.49 515.46 553.36 514.74 553.24 512.31 552.08 509.89 550.92 507.71 550.18 505.52 549.44 503.94 549.27 502.36 549.11 501.06 549.1 499.76 549.09 499.44 549.09 499.12 549.09 498.77 549.03 498.42 548.98 498.11 548.82 497.79 548.66 497.54 548.41 497.29 548.16 497.13 547.84 496.97 547.53 496.92 547.18 496.86 546.83 496.92 546.48 496.97 546.13 497.13 545.82 497.29 545.5 497.54 545.25 497.79 545 498.11 544.84 498.42 544.68 498.77 544.63 499.12 544.57 499.44 544.57 Z"></path>
+                    </svg></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 294.843px; left: 607.919px; top: 108px;" data-block-id="5fe7fd73e041dd072e43901a4de1df87" data-name="text-a970d6">
+    <div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 87%;" data-fragment-index="4">
+        <p>park multiple cars until you don't want to? 👉 use <strong>break in while-loop</strong></p>
+    </div>
+    <grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 15;" class="cGcvT"></grammarly-extension>
+    <grammarly-extension data-grammarly-shadow-root="true" style="mix-blend-mode: darken; position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 15;" class="cGcvT"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 389.192px; height: auto; left: 560.745px; top: 221.656px;" data-block-id="886243b6820423426f72ede7e98ff125" data-name="code-00aa36">
+    <div class="sl-block-style" style="z-index: 16; opacity: 0.98;">
+        <div class="sl-block-content notranslate fragment" data-highlight-theme="ir-black" style="z-index: 16; border-style: solid; border-radius: 4px;" data-code-frame="osx" data-code-autoheight="true" data-code-wrap="true" data-fragment-index="5">
+            <pre class="python" style="font-size: 15px; line-height: 18px;"><code style="padding: 15px;" data-line-numbers="" data-fragment-index="0">while True:
+    # enter information for one vehicle
+    plate, duration = pay_for_a_vehicle()
+    # ask whether to pay for another
+    another = int(input("Park another vehicle? (1: Yes; 0: No):"))
+    # if not, break
+    if another == 0:
+        break</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-ad1344" data-block-id="8f56deaffb8a5bd82b19af0a2c6ad51d">
+    <div class="sl-block-content sl-block-group-content fragment" style="transform-origin: 349.471px 359.514px; z-index: 17;" data-fragment-index="1">
+        <div class="sl-block" data-block-type="drawing" data-name="drawing-a8adf0" data-block-id="b23c8e29ad54e44dee146854586ad84c" style="width: 199.452px; height: 25.7468px; left: 249.745px; top: 318.277px;">
+            <div class="sl-block-style" style="z-index: 18; filter: drop-shadow(rgb(28, 235, 123) 0px 0px 5px);">
+                <div class="sl-block-content" data-points="299.48 335.13,301.89 335.8,304.48 336.98,307.43 338.35,310.97 339.61,314.2 340.6,316.42 341.43,318.93 342.29,321.6 343.18,323.76 343.7,325.81 343.96,328.13 343.96,331.09 343.96,333.79 343.96,337.53 343.96,341.3 343.96,345.71 343.96,350.55 343.96,355.52 343.96,359.11 343.96,363.49 343.96,368.24 343.96,372.98 343.73,378.01 343.13,384.23 342.61,390.11 342.29,395.15 342.03,400.18 341.71,404.3 341.4,407.9 341.34,411.56 341.04,415.41 340.69,420.28 340.64,424.33 340.38,426.4 340.12,428.46 340.12,430.52 339.86,432.51 339.6,435.88 339.31,437.92 339.09,440.67 338.5,442.91 338.12,444.98 337.77,447.02 337.14,449.08 336.62,451.09 335.94,453.35 335.31,455.73 334.58,457.96 333.91,460.5 332.94,462.45 332.39,464.69 332.13,467.63 332.13,469.97 332.13,473.39 332.13,475.67 332.13,477.81 332.51,475.54 330.2,472.7 327.73,470.63 325.52,469.16 324.02,470.85 326.26,473.24 329.08,474.66 330.71,476.47 332.52,478.12 334.17,479.59 335.73,481.28 337.6,482.79 339.13,480.42 338.85,478.26 338.58,476.54 339.85,475.1 342.46,473.69 344.25" data-timestamp="1644800292841" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="none" width="100%" height="100%" viewbox="297.2454528808594 322.0672607421875 187.58453369140625 24.21484375">
+                        <path fill="rgb(28, 235, 123)" d="M 300.6130789768265 333.1001331087473 Q 300.61 333.1 301.76 333.46 302.91 333.82 304.34 334.44 305.77 335.07 307.28 335.74 308.78 336.41 310.4 337.01 312.03 337.61 313.82 338.19 315.62 338.78 318.05 339.58 320.48 340.38 322.73 340.91 324.97 341.45 327.1 341.53 329.23 341.61 331.77 341.63 334.3 341.65 336.13 341.68 337.95 341.72 339.9 341.75 341.85 341.79 344.07 341.84 346.29 341.89 348.69 341.95 351.1 342 353.43 342.03 355.75 342.06 357.7 342.04 359.65 342.02 361.85 342.03 364.05 342.03 366.39 342.03 368.73 342.02 371.09 341.9 373.44 341.77 376.04 341.55 378.63 341.32 381.67 341.14 384.71 340.97 387.59 340.82 390.46 340.68 393.02 340.51 395.59 340.34 398 340.16 400.41 339.98 402.46 339.8 404.51 339.63 406.36 339.52 408.22 339.4 410.03 339.23 411.84 339.06 413.88 338.92 415.91 338.77 418.25 338.73 420.58 338.68 422.67 338.53 424.75 338.37 426.92 338.13 429.08 337.88 430.92 337.62 432.76 337.36 434.57 337.15 436.38 336.95 438.66 336.55 440.95 336.14 443.11 335.69 445.26 335.24 447.25 334.66 449.24 334.07 451.38 333.41 453.52 332.75 455.8 332.04 458.08 331.33 460.5 330.7 462.91 330.07 465.77 329.92 468.62 329.77 473.06 329.94 477.5 330.1 478.19 330.33 478.89 330.55 479.32 331.14 479.74 331.73 479.74 332.46 479.74 333.19 479.32 333.78 478.89 334.37 478.28 334.08 477.67 333.78 475.54 332.62 473.41 331.45 472.21 330.31 471.01 329.17 469.37 327.51 467.73 325.84 467.42 325.2 467.11 324.56 467.24 323.86 467.36 323.17 467.87 322.68 468.38 322.19 469.08 322.09 469.78 321.99 470.13 322.33 470.47 322.66 471.76 323.98 473.05 325.31 474.25 326.71 475.44 328.1 477.05 329.78 478.66 331.46 481.49 334.39 484.33 337.31 484.63 337.98 484.93 338.65 484.78 339.36 484.63 340.08 484.09 340.57 483.55 341.07 482.82 341.15 482.09 341.23 481.65 341.19 481.22 341.15 479.19 342.62 477.17 344.09 475.62 344.2 474.08 344.32 473.72 342.82 473.37 341.31 474.8 340.72 476.23 340.13 477.03 341.45 477.84 342.78 476.66 343.78 475.48 344.78 474.31 343.77 473.13 342.76 474.02 340.64 474.91 338.51 477.17 337.65 479.43 336.79 481.65 337.45 483.88 338.11 484.41 338.38 484.93 338.65 484.78 339.36 484.63 340.08 484.09 340.57 483.55 341.07 482.82 341.15 482.09 341.23 481.45 340.86 480.82 340.5 478.09 337.59 475.35 334.68 473.7 332.88 472.04 331.07 470.73 329.56 469.41 328.05 468.47 326.66 467.54 325.26 467.33 324.91 467.11 324.56 467.24 323.86 467.36 323.17 467.87 322.68 468.38 322.19 469.08 322.09 469.78 321.99 470.41 322.33 471.03 322.66 474.42 326.08 477.81 329.51 478.35 330.03 478.89 330.55 479.32 331.14 479.74 331.73 479.74 332.46 479.74 333.19 479.32 333.78 478.89 334.37 478.19 334.6 477.5 334.82 473.09 334.66 468.67 334.5 466.31 334.61 463.94 334.71 461.7 335.32 459.46 335.92 457.15 336.64 454.85 337.36 452.65 338.01 450.46 338.67 448.3 339.25 446.15 339.84 443.99 340.23 441.82 340.63 439.36 341 436.9 341.37 435.09 341.57 433.29 341.77 431.28 341.95 429.27 342.13 427.1 342.22 424.94 342.31 422.81 342.41 420.69 342.5 418.44 342.58 416.19 342.66 414.17 342.8 412.14 342.93 410.25 343.05 408.36 343.17 406.54 343.19 404.72 343.21 402.68 343.29 400.63 343.38 398.2 343.51 395.77 343.64 393.21 343.75 390.64 343.87 387.81 344.05 384.97 344.22 381.98 344.53 379 344.84 376.33 345.15 373.66 345.47 371.22 345.63 368.77 345.8 366.41 345.84 364.05 345.89 361.85 345.89 359.65 345.9 357.7 345.88 355.75 345.86 353.43 345.89 351.1 345.92 348.69 345.97 346.29 346.03 344.07 346.08 341.85 346.13 339.9 346.17 337.95 346.2 336.13 346.24 334.3 346.27 331.74 346.28 329.17 346.3 326.64 346.13 324.1 345.96 321.6 345.32 319.1 344.68 316.68 343.83 314.27 342.98 312.41 342.37 310.56 341.76 308.77 341.15 306.98 340.54 305.45 339.89 303.92 339.25 302.72 338.71 301.53 338.17 300.47 337.81 299.4 337.45 299.14 337.38 298.87 337.31 298.55 337.16 298.23 337.01 297.97 336.77 297.71 336.53 297.54 336.23 297.36 335.92 297.29 335.57 297.22 335.23 297.26 334.88 297.3 334.52 297.45 334.2 297.6 333.88 297.84 333.62 298.08 333.36 298.38 333.19 298.69 333.01 299.04 332.94 299.38 332.87 299.73 332.91 300.09 332.95 300.35 333.03 Z"></path>
+                    </svg></div>
+            </div>
+        </div>
+        <div class="sl-block" data-block-type="drawing" data-name="drawing-34dd6e" data-block-id="cb88ce3d3bffb79267d01721b1a0d66c" style="width: 128.819px; height: 70.9032px; left: 301.759px; top: 329.847px;">
+            <div class="sl-block-style" style="z-index: 19; filter: drop-shadow(rgb(28, 235, 123) 0px 0px 5px);">
+                <div class="sl-block-content" data-points="348.4 397.33,350.7 397.33,353.17 397.33,356.94 397.33,359 397.33,361.06 397.33,364.3 397.33,367.25 397.33,370.34 397.33,372.79 397.33,375.45 397.33,378.82 397.33,381.94 396.88,386.52 394.93,388.71 393.17,390.79 391.5,392.88 389.62,395.01 387.34,397.66 385.13,400.48 382.95,402.87 380.79,405.41 379.05,408.67 376.35,410.37 374.95,412.96 372.45,414.53 371.06,417.02 368.8,418.9 366.91,421.55 364.25,423.82 361.77,426.56 358.88,428.95 356.83,431.27 354.5,433.46 352.44,435.51 350.83,437.86 349.13,440.04 347.31,442.38 345.74,444.3 344.31,446.19 343.3,448.08 342.04,450.38 340.58,452.2 339.63,454.31 338.35,456.92 337.13,459.06 336.33,461.01 335.86,463.05 335.69,465.67 335.19,468.02 334.51" data-timestamp="1644800294737" style="z-index: 19;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="none" width="100%" height="100%" viewbox="346.1650085449219 332.9488525390625 121.1544189453125 66.68447875976562">
+                        <path fill="rgb(28, 235, 123)" d="M 348.903125 395.06964925130205 Q 348.9 395.07 349.96 395.05 351.02 395.03 352.37 395.03 353.73 395.03 355.62 395.05 357.51 395.06 359.52 395.04 361.54 395.02 363.45 395.03 365.37 395.04 368.28 395.05 371.19 395.05 373.54 395.04 375.89 395.04 377.97 394.82 380.04 394.61 383.08 393.53 386.12 392.45 388.13 390.76 390.13 389.06 391.97 387.3 393.8 385.55 395.19 384.39 396.59 383.23 397.96 382.13 399.33 381.03 400.54 380.01 401.76 378.99 403.16 377.95 404.56 376.91 406.25 375.51 407.94 374.12 410.04 372.2 412.13 370.29 414.22 368.33 416.31 366.37 418.25 364.42 420.2 362.46 421.39 361.2 422.58 359.94 423.92 358.59 425.27 357.25 426.5 356.11 427.74 354.97 428.86 353.87 429.98 352.76 431.38 351.51 432.79 350.26 435.07 348.49 437.35 346.71 439.56 345.08 441.77 343.44 443.78 342.11 445.79 340.78 447.8 339.51 449.8 338.23 451.64 337.2 453.48 336.17 455.08 335.48 456.69 334.8 459 334.12 461.32 333.45 463.15 333.07 464.99 332.7 466.35 333.46 467.7 334.22 467.17 335.67 466.63 337.13 465.11 336.83 463.59 336.53 463.65 334.98 463.7 333.43 465.25 333.24 466.79 333.06 467.21 334.55 467.63 336.05 465.03 337.06 462.43 338.08 460.47 338.6 458.51 339.13 456.35 340.19 454.18 341.24 452.13 342.42 450.08 343.59 448.19 344.7 446.3 345.81 444.25 347.19 442.2 348.56 439.97 350.24 437.74 351.92 435.61 353.69 433.49 355.47 432.06 356.81 430.63 358.15 429.46 359.2 428.3 360.25 427.02 361.57 425.75 362.89 424.54 364.21 423.32 365.52 421.31 367.56 419.3 369.6 417.21 371.53 415.11 373.45 412.9 375.41 410.69 377.36 408.02 379.5 405.36 381.63 403.71 383.02 402.05 384.41 400.72 385.49 399.39 386.57 398.15 387.62 396.9 388.66 395.75 389.8 394.6 390.94 392.65 392.59 390.7 394.24 389.05 395.43 387.4 396.62 385.21 397.63 383.01 398.65 381.11 399.07 379.21 399.49 377.55 399.56 375.89 399.62 373.54 399.62 371.19 399.61 368.28 399.61 365.37 399.62 363.45 399.63 361.54 399.64 359.52 399.62 357.51 399.6 355.62 399.61 353.73 399.63 352.37 399.63 351.02 399.63 349.96 399.61 348.9 399.59 348.65 399.59 348.4 399.59 348.05 399.54 347.7 399.48 347.39 399.32 347.07 399.16 346.82 398.91 346.57 398.66 346.41 398.34 346.25 398.03 346.19 397.68 346.14 397.33 346.19 396.98 346.25 396.63 346.41 396.32 346.57 396 346.82 395.75 347.07 395.5 347.39 395.34 347.7 395.18 348.05 395.12 348.4 395.07 348.65 395.07 Z"></path>
+                    </svg></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" data-name="image-df8c3e" data-block-id="bea66c357471dc9b51efd86cace6e362" style="width: 408.76px; height: 155.339px; left: 46.2575px; top: 530.468px; min-width: 1px; min-height: 1px;"><div class="sl-block-style" style="z-index: 20; filter: drop-shadow(rgb(28, 235, 123) 0px 0px 5px);"><div class="sl-block-content fragment" style="z-index: 20;" data-fragment-index="2"><img style="left: -6px; top: 0px; width: 478px; height: 161px;" data-natural-width="986" data-natural-height="332" data-crop-x="0.013193" data-crop-y="0" data-crop-width="0.854881" data-crop-height="0.964844" data-lazy-loaded="" data-src="cogsci131_02_07_section-21888a/aabbbf93ea1ea6109e43b62f2dfcb759.png"></div></div></div>
+<div class="sl-block" data-block-type="image" data-name="image-477b57" data-block-id="ecef9d7218f9cb981d9b013db51d5fef" style="width: 390.683px; height: 176.924px; left: 560px; top: 508.883px; min-width: 1px; min-height: 1px;"><div class="sl-block-style" style="z-index: 24; filter: drop-shadow(rgb(28, 235, 123) 0px 0px 5px);"><div class="sl-block-content fragment" style="z-index: 24;" data-fragment-index="6"><img style="left: 0px; top: 0px; width: 422px; height: 177px;" data-natural-width="936" data-natural-height="392" data-crop-x="0" data-crop-y="0" data-crop-width="0.924802" data-crop-height="1" data-lazy-loaded="" data-src="cogsci131_02_07_section-21888a/d86c3edbd92d87a7f0a240b193064823.png"></div></div></div></section><section data-id="130a4b9754ccc6db87c14c053f4cf9b4"><div class="sl-block" data-block-type="text" style="width: 413px; left: 29px; top: 84px; height: auto;" data-block-id="573858a16ef58067defc3786011ce92d">
+    <div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<h2>regex 101</h2>
+</div>
+</div>
+<div class="sl-block" data-block-type="text" style="width: 436.392px; left: 29px; top: 158px; height: auto;" data-block-id="ac822deab1b77b889a39f7989e868d42">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 11; text-align: left;">
+        <p><em>find patterns in strings (<a href="https://developers.google.com/edu/python/regular-expressions" target="_blank">tutorial</a>)</em></p>
+    </div>
+</div>
+
+<div class="sl-block" data-block-type="text" data-name="text-99f7d1" data-block-id="86000401ce49f16fe688936bcd1c23df" style="height: auto; width: 513.988px; left: 10.924px; top: 203.62px;">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 73%;" dir="ui">
+<ul>
+	<li class="fragment" data-fragment-index="0" style="text-align:left">
+<strong>match = re.search(pattern, string)</strong>
+	<ul>
+		<li class="fragment" data-fragment-index="1" style="text-align:left"><span style="font-size:0.9em"><strong>how regex "thinks"</strong>: start from <em>leftmost</em> match + use as much as of the string possible (<em>"greedy"</em>)</span></li>
+		<li class="fragment" data-fragment-index="2" style="text-align:left">
+<strong><span style="color:rgb(34, 34, 34); font-size:0.9em; text-align:left">​if </span></strong><span style="font-size:19.71px"><strong><strong>s</strong>uccessful</strong></span><span style="font-size:0.9em">: can use match.group() returns matching text; <strong>if not</strong></span><span style="font-size:0.9em">: returns None</span>
+</li>
+	</ul>
+	</li>
+	<li class="fragment" data-fragment-index="3" style="text-align:left">
+<strong>one </strong><span style="font-size:23.4px"><strong>occurrence</strong></span><strong>: r"</strong><strong>pattern</strong><strong>" </strong>(pass raw strings)
+	<ul>
+		<li class="fragment" data-fragment-index="4" style="text-align:left"><span style="font-size:0.9em"><strong>literal matching</strong>: "ordinary" characters match themselves 👉 not ordinary: <span style="color:#FF8C00">^$*+?{[]\|()}</span></span></li>
+		<li class="fragment" data-fragment-index="5" style="text-align:left"><span style="font-size:0.9em"><strong>also special</strong>: <span style="color:#FF8C00">\t</span> (tab), <span style="color:#FF8C00">\n</span> (newline), <span style="color:#FF8C00">\r</span> (return)</span></li>
+		<li class="fragment" data-fragment-index="6" style="text-align:left"><span style="font-size:0.9em"><strong>make any character ordinary</strong>: <span style="color:#FF8C00">\</span> (e.g., \^)</span></li>
+		<li class="fragment" data-fragment-index="7" style="text-align:left"><span style="font-size:0.9em"><strong>any single character</strong>: <span style="color:#FF8C00">.</span> (period)</span></li>
+		<li class="fragment" data-fragment-index="8" style="text-align:left"><span style="font-size:0.9em"><strong>any particular type of character</strong>: <span style="color:#FF8C00">\w</span> (<span style="color:rgb(0, 0, 0); text-align:left">letter, digit, or _), </span><span style="color:#FF8C00"><span style="text-align:left">\s</span></span><span style="color:rgb(0, 0, 0); text-align:left"> (white space), </span><span style="color:#FF8C00"><span style="text-align:left">\d</span></span><span style="color:rgb(0, 0, 0); text-align:left"> (decimal digit)</span></span></li>
+		<li class="fragment" data-fragment-index="9" style="text-align:left"><span style="font-size:0.9em"><strong>specify location</strong>: <span style="color:#FF8C00">^</span> (start), <span style="color:#FF8C00">$</span> (end)</span></li>
+	</ul>
+	</li>
+	<li class="fragment" data-fragment-index="10" style="text-align:left">
+<strong>repetitions</strong>: <span style="color:#FF8C00">+</span> (1 or more), <span style="color:#FF8C00">*</span> (0 or more), <span style="color:#FF8C00">?</span> (0 or 1)</li>
+	<li class="fragment" data-fragment-index="11" style="text-align:left">
+<strong>not sure?</strong>: <span style="color:#FF8C00">[abc]</span> 👉 match pattern 'a', 'b', or 'c'</li>
+</ul>
+</div>
+    <grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 12;" class="cGcvT"></grammarly-extension>
+    <grammarly-extension data-grammarly-shadow-root="true" style="mix-blend-mode: darken; position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 12;" class="cGcvT"></grammarly-extension>
+    <grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 12;" class="cGcvT"></grammarly-extension>
+    <grammarly-extension data-grammarly-shadow-root="true" style="mix-blend-mode: darken; position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 12;" class="cGcvT"></grammarly-extension>
+    <grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 12;" class="cGcvT"></grammarly-extension>
+    <grammarly-extension data-grammarly-shadow-root="true" style="mix-blend-mode: darken; position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 12;" class="cGcvT"></grammarly-extension>
+    <grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 13;" class="cGcvT"></grammarly-extension>
+    <grammarly-extension data-grammarly-shadow-root="true" style="mix-blend-mode: darken; position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 13;" class="cGcvT"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="text" data-name="text-7e5adf" data-block-id="1b630687a25dea4621d156e8b82c1a73" style="height: auto; width: 326.25px; left: 578.745px; top: 9.5px;">
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 76%;">
+<p style="text-align:left"><strong>example: </strong>extract the email in  <em>"address colorless green ideas to chomsky1928@mit.edu"</em></p>
+</div>
+    <grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 13;" class="cGcvT"></grammarly-extension>
+    <grammarly-extension data-grammarly-shadow-root="true" style="mix-blend-mode: darken; position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 13;" class="cGcvT"></grammarly-extension>
+</div>
+<div class="sl-block" data-block-type="code" style="width: 433.916px; height: auto; left: 524.912px; top: 98.5px;" data-name="code-00aa36" data-block-id="bd2b2fb469ac430c2fc2235d63b676e0">
+    <div class="sl-block-style" style="z-index: 14; opacity: 0.98;">
+        <div class="sl-block-content notranslate fragment" data-highlight-theme="ir-black" style="z-index: 14; border-style: solid; border-radius: 4px;" data-code-frame="osx" data-code-autoheight="true" data-code-wrap="true" data-fragment-index="12">
+            <pre class="python" style="font-size: 15px; line-height: 18px;"><code style="padding: 15px;" data-line-numbers="" data-fragment-index="0"># use built-in "re" library
+import re
+
+# test case
+test = "address colorless green ideas to chomsky1928@mit.edu"
+
+# write out pattern in 2 groups
+pattern = r"(\w+\d+)@(\w+.\w+)"
+
+# search for pattern in example
+match = re.search(pattern, test)
+
+# print results
+if not match:
+    print("can't find emails")
+else:
+    print(f"email found: {match.group()}")</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block" data-block-type="text" data-name="text-7343ed" data-block-id="4e6571e04701ef345a3ad752e30e3f40" style="height: auto; width: 420.957px; left: 539.043px; top: 528.62px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 64%;">
+<ul>
+	<li class="fragment" data-fragment-index="15">
+<strong>first group</strong>: <span style="color:#FF8C00">\w+d+</span> (repeating word characters + digits)</li>
+	<li class="fragment" data-fragment-index="16">
+<strong>second group</strong>: <span style="color:#FF8C00">\w+.\w+</span> (word characters, period 👉 literal in group, word characters)</li>
+</ul>
+
+<p class="fragment" data-fragment-index="17">groups can be returned separately (1-indexing): match.group(1) or match.group(2)</p>
+</div></div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-e23634" data-block-id="7d6fadd83a577dea75971921f065d51d"><div class="sl-block-content sl-block-group-content fragment" style="transform-origin: 792.705px 384.429px; z-index: 16;" data-fragment-index="13">
+<div class="sl-block" data-block-type="drawing" data-name="drawing-6ca7f5" data-block-id="e8237f38c868fba093beef668212e279" style="width: 128.525px; height: 6.84742px; left: 697.671px; top: 309.165px;"><div class="sl-block-style" style="z-index: 17; filter: drop-shadow(rgb(28, 235, 123) 0px 0px 5px);"><div class="sl-block-content" data-points="712.88 358.23,715.38 358.23,717.92 358.23,721.88 358.23,726.32 358.23,728.75 358.23,732.98 358.23,735.43 358.23,739.53 358.23,743.19 358.23,746.53 358.23,750.25 358.23,753.34 358.23,755.76 358.23,758.47 358.23,760.65 358.23,762.69 358.23,764.72 358.04,767.34 357.8,769.31 357.37,771.62 357.11,774.56 356.85,777.9 356.33,781.4 356.33,784.34 356.33,787.01 356.33,790.31 356.33,793.43 356.33,796.59 356.33,799.27 356.33,801.57 356.47,803.66 356.99,805.68 357.33,807.95 357.55,810.05 357.66,812.97 357.66,815.55 357.66,818.55 357.66,821.91 357.66,826.52 357.66,829.71 357.66,832.13 357.66" data-timestamp="1644803500447" style="z-index: 17;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="none" width="100%" height="100%" viewbox="710.6500244140625 354.0799865722656 120.877685546875 6.44000244140625"><path fill="rgb(28, 235, 123)" d="M 713.426875 355.9707430013021 Q 713.43 355.97 714.56 355.95 715.69 355.94 717.1 355.94 718.51 355.94 720.47 355.99 722.43 356.03 724.9 356.08 727.37 356.12 730.71 356.12 734.05 356.12 736.97 356.12 739.89 356.12 741.7 356.12 743.51 356.13 745.24 356.12 746.97 356.12 748.74 356.12 750.52 356.12 752.35 356.1 754.19 356.08 756.68 356.04 759.16 355.99 761.33 355.91 763.49 355.83 765.66 355.58 767.82 355.33 770.18 354.98 772.53 354.63 775.28 354.37 778.04 354.11 779.83 354.1 781.62 354.08 783.51 354.08 785.39 354.08 788.01 354.08 790.63 354.08 792.2 354.09 793.77 354.09 795.61 354.1 797.44 354.12 799.96 354.25 802.47 354.37 804.64 354.71 806.82 355.04 809.01 355.16 811.21 355.28 813.98 355.3 816.74 355.32 819.65 355.36 822.55 355.41 824.64 355.46 826.72 355.52 828.28 355.52 829.84 355.51 830.9 356.42 831.96 357.32 831.23 358.51 830.5 359.7 829.22 359.17 827.93 358.63 828.25 357.28 828.58 355.92 829.97 356.03 831.36 356.14 831.47 357.53 831.58 358.92 829.15 359.36 826.72 359.8 824.64 359.86 822.55 359.91 819.64 359.96 816.74 360 813.87 360.01 811 360.02 808.57 359.86 806.14 359.69 804.11 359.32 802.08 358.95 799.73 358.77 797.38 358.6 795.58 358.59 793.77 358.57 792.2 358.57 790.63 358.58 789.03 358.58 787.43 358.59 784.9 358.59 782.36 358.59 780.46 358.62 778.56 358.66 775.85 358.98 773.13 359.3 770.71 359.65 768.29 360 765.94 360.21 763.59 360.43 761.38 360.45 759.16 360.47 756.68 360.42 754.19 360.38 752.35 360.36 750.52 360.34 748.74 360.34 746.97 360.34 745.24 360.34 743.51 360.33 741.7 360.34 739.89 360.34 736.97 360.34 734.05 360.34 730.71 360.34 727.37 360.34 724.9 360.38 722.43 360.43 720.47 360.47 718.51 360.52 717.1 360.52 715.69 360.52 714.56 360.51 713.43 360.49 713.15 360.49 712.88 360.49 712.53 360.43 712.18 360.38 711.87 360.22 711.55 360.06 711.3 359.81 711.05 359.56 710.89 359.24 710.73 358.93 710.68 358.58 710.62 358.23 710.68 357.88 710.73 357.53 710.89 357.22 711.05 356.9 711.3 356.65 711.55 356.4 711.87 356.24 712.18 356.08 712.53 356.03 712.88 355.97 713.15 355.97 Z"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="drawing" data-name="drawing-d08092" data-block-id="6b7e4b71bf2d31617df95b1d1a913423" style="width: 47.2987px; height: 145.929px; left: 840.441px; top: 313.765px;"><div class="sl-block-style" style="z-index: 18; filter: drop-shadow(rgb(28, 235, 123) 0px 0px 5px);"><div class="sl-block-content" data-points="847.16 360.73,849.24 360.73,851.38 360.73,853.72 360.73,856.59 360.73,859.53 360.87,862.2 361.48,864.59 362.47,866.89 364.1,868.68 365.89,870.38 367.74,871.95 371.17,873.26 375.13,873.54 378.31,874.14 382.37,874.44 384.91,875.09 388.51,875.44 392.08,875.55 396.33,875.89 401.27,876.13 405.37,876.13 409.12,876.13 413.21,876.13 417.33,876.13 421.13,876.13 425.24,876.13 429.18,876.13 432.53,876.13 435.7,876.13 438.85,876.13 441.98,876.13 444.67,876.13 446.9,876.13 451.09,876.13 454.19,876.13 456.73,876.13 459.27,876.13 461.34,876.13 465.01,876.13 467.3,876.13 470.99,876.13 473.14,876.13 475.26,876.13 477.36,876.13 479.53,876.13 481.7,876.13 485.04,875.97 487.6,875.36 489.77,874.52 491.94,873.96 493.93,871.92 494.09,869.79 492.3,868.28 490.86,866.16 489.01,864.74 487.58,862.93 485.62,865.3 486.54,867.89 488.29,870.6 489.98,872.42 491.46,874.16 492.62,876.1 493.35,877.97 494.08,879.84 492.58,881.39 491.29,883.4 489.58,885.78 487.21,887.96 485.23,889.6 483.8" data-timestamp="1644803502682" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="none" width="100%" height="100%" viewbox="844.925048828125 358.40667724609375 44.48443603515625 137.24609375"><path fill="rgb(28, 235, 123)" d="M 847.615 358.46881458333337 Q 847.62 358.47 848.56 358.45 849.51 358.43 850.93 358.41 852.36 358.4 854.65 358.42 856.95 358.43 858.46 358.56 859.98 358.69 861.83 359.26 863.67 359.84 866.26 361.39 868.85 362.94 870.59 364.9 872.33 366.86 873.21 368.8 874.1 370.75 874.67 372.78 875.25 374.8 875.5 376.68 875.76 378.55 876.08 380.79 876.39 383.04 876.8 385.8 877.21 388.57 877.37 390.5 877.53 392.42 877.59 394.64 877.65 396.86 877.76 399.18 877.86 401.5 877.96 403.57 878.06 405.63 878.09 407.6 878.11 409.58 878.11 411.62 878.11 413.66 878.11 415.68 878.12 417.7 878.12 419.65 878.13 421.6 878.13 423.62 878.12 425.65 878.13 427.56 878.14 429.47 878.16 431.16 878.18 432.84 878.2 434.44 878.22 436.03 878.24 437.61 878.25 439.18 878.27 440.99 878.29 442.79 878.32 445.18 878.34 447.56 878.32 449.44 878.29 451.33 878.3 453.18 878.32 455.03 878.34 457.67 878.37 460.31 878.37 463.16 878.36 466.01 878.37 468.8 878.37 471.6 878.41 473.81 878.44 476.02 878.46 478.29 878.48 480.56 878.37 483.25 878.27 485.94 877.7 488.63 877.13 491.31 875.84 493.38 874.55 495.45 872.88 495.63 871.21 495.8 869.47 494.7 867.73 493.61 864.62 490.6 861.51 487.59 861.17 486.94 860.83 486.28 860.94 485.55 861.05 484.82 861.56 484.3 862.08 483.77 862.81 483.65 863.54 483.53 864.2 483.84 864.86 484.16 867.17 485.32 869.48 486.48 870.94 487.46 872.4 488.44 874.19 489.5 875.99 490.55 877.53 490.3 879.08 490.05 880.6 488.75 882.12 487.45 883.25 486.4 884.37 485.34 885.21 484.62 886.05 483.9 887.56 483.84 889.07 483.79 889.36 485.27 889.65 486.75 888.24 487.27 886.82 487.79 886.08 486.47 885.34 485.16 886.53 484.22 887.72 483.29 888.83 484.31 889.94 485.34 887.61 488.19 885.28 491.05 883.56 492.52 881.84 493.99 880.18 494.89 878.53 495.78 876.2 495.31 873.87 494.84 871.88 493.61 869.88 492.39 867.68 490.95 865.47 489.5 863.58 488.2 861.69 486.9 861.26 486.59 860.83 486.28 860.94 485.55 861.05 484.82 861.56 484.3 862.08 483.77 862.81 483.65 863.54 483.53 864.2 483.86 864.86 484.19 867.06 486.34 869.26 488.49 870.66 489.94 872.06 491.4 872.55 490.54 873.05 489.69 873.34 487.67 873.64 485.66 873.71 483.11 873.78 480.56 873.8 478.29 873.82 476.02 873.85 473.81 873.89 471.6 873.89 468.8 873.9 466.01 873.89 463.16 873.89 460.31 873.92 457.67 873.94 455.03 873.96 453.18 873.97 451.33 873.94 449.44 873.92 447.56 873.94 445.18 873.97 442.79 873.99 440.99 874.01 439.18 874.02 437.61 874.04 436.03 874.06 434.44 874.08 432.84 874.1 431.16 874.12 429.47 874.13 427.56 874.14 425.65 874.13 423.62 874.13 421.6 874.14 419.65 874.14 417.7 874.15 415.68 874.15 413.66 874.14 411.63 874.14 409.6 874.14 407.71 874.14 405.81 874.05 403.78 873.95 401.75 873.76 399.39 873.57 397.03 873.44 394.92 873.31 392.8 873.15 391.02 872.98 389.24 872.59 386.46 872.2 383.68 871.73 380.33 871.26 376.99 870.16 373.8 869.06 370.61 867.56 368.61 866.05 366.62 864.19 365.41 862.33 364.2 859.9 363.71 857.48 363.22 854.92 363.14 852.36 363.06 850.93 363.05 849.51 363.03 848.56 363.01 847.62 362.99 847.39 362.99 847.16 362.99 846.81 362.94 846.46 362.88 846.15 362.72 845.83 362.56 845.58 362.31 845.33 362.06 845.17 361.74 845.01 361.43 844.95 361.08 844.9 360.73 844.95 360.38 845.01 360.03 845.17 359.72 845.33 359.4 845.58 359.15 845.83 358.9 846.15 358.74 846.46 358.58 846.81 358.52 847.16 358.47 847.39 358.47 Z"></path></svg></div></div></div>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 194.805px; left: 756.758px; top: 465px;" data-block-id="c527cc45ea80be67de545306a853a2a0" data-name="text-168c58"><div class="sl-block-style" style="z-index: 19; filter: drop-shadow(rgb(28, 235, 123) 0px 0px 5px);"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; font-size: 64%; color: rgb(28, 235, 123);" data-fragment-index="13">
+<p><em>() denote a group</em></p>
+</div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-d286c2" data-block-id="1c62a7332296c464245a873011860658" style="height: auto; width: 345.879px; left: 583.819px; top: 502.5px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 20; font-size: 58%;" data-fragment-index="14">
+<pre style="color:var(--jp-content-font-color1); font-size:var(--jp-code-font-size)">email found: chomsky1928@mit.edu
+</pre>
+</div></div></section><section data-id="ceeea3e168b4ae276f198e92a34db41b"><div class="sl-block" data-block-type="text" style="width: 413px; left: 29px; top: 84px; height: auto;" data-block-id="9a79c52ca406003b750e79d9cf0dfa0a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<h2>regex 101</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 473.329px; left: 18.3674px; top: 158px; height: auto;" data-block-id="7e54b59af48d457ca7c68f87a400fcae"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec metus justo. Aliquam erat volutpat." style="z-index: 11; text-align: left; font-size: 88%;">
+<ul>
+	<li class="fragment" data-fragment-index="0">compare regex functions
+	<ul>
+		<li class="fragment" data-fragment-index="1"><span style="font-size:0.9em"><strong>re.search(pattern, string):</strong> only finds first match and returns a string</span></li>
+		<li class="fragment" data-fragment-index="2">
+<span style="font-size:0.9em"><strong>re.findall(</strong></span><strong>pattern, string)</strong><span style="font-size:0.9em"><strong>):</strong> finds all matches and returns a list</span>
+</li>
+		<li class="fragment" data-fragment-index="3"><span style="font-size:0.9em"><strong>re.sub(pattern, replacement, string)</strong>: replace matches </span></li>
+	</ul>
+	</li>
+	<li class="fragment" data-fragment-index="4">
+<strong>practice</strong>: use regex to extract the following content
+	<ul>
+		<li><span style="font-size:0.9em"><em>"i ate an icream"</em> 👉 what did i eat?</span></li>
+		<li>
+<span style="font-size:0.9em">drop common suffixes in company names: e.g., Apple Inc. 👉 Apple, Intel Corp. </span><span style="color:rgb(0, 0, 0); font-size:23.76px">👉 Intel...</span>
+</li>
+	</ul>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-20c6fa" data-block-id="90b95992c2cd91be3b75ccd0f4a3a330" style="height: auto; width: 369.676px; left: 535.162px; top: 17.1409px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" data-fragment-index="5">
+<p>example answers</p>
+</div></div>
+<div class="sl-block" data-block-type="code" style="width: 468.304px; height: auto; left: 491.696px; top: 147px;" data-name="code-00aa36" data-block-id="1e4f1de7d25754edf754fd2b2d24c133">
+    <div class="sl-block-style" style="z-index: 13; opacity: 0.98;">
+        <div class="sl-block-content notranslate fragment" data-highlight-theme="ir-black" style="z-index: 13; border-style: solid; border-radius: 4px;" data-code-frame="osx" data-code-autoheight="true" data-code-wrap="true" data-fragment-index="5">
+            <pre class="python" style="font-size: 15px; line-height: 18px;"><code style="padding: 15px;" data-line-numbers="" data-fragment-index="0"># example 1: special -&gt; exclude the word itself 
+re.search(r"(?&lt;=ate).*$", "i ate an apple")
+
+# example 2: special -&gt; multi-line pattern + complex logic
+suffixes = re.compile(
+    r"""(,? inc.?| limited| unlimited| corporation| corp| llp.?| llc.?| ltd.?|
+|\s?company| companies| &amp; company| &amp; co| and company| &amp; son| holdings| solutions| 
+| partners| holdings| technologies| tech| infotech| informationnology| group| consulting|
+| productions| digital| services| usa| us|\s?united states| global| worldwide| international)""",
+    re.MULTILINE,
+)
+# full name of company
+full_name = "Apple Inc."
+# replace suffix with empty string
+simplified = suffixes.sub("", full_name.lower())</code></pre>
+        </div>
+    </div>
+</div>
+<div class="sl-block sl-block-group" data-block-type="group" data-name="group-19dcfc" data-block-id="19470263a04cf16911d6db12d3a7fd78"><div class="sl-block-content sl-block-group-content fragment" style="transform-origin: 683.647px 199.445px; z-index: 14;" data-fragment-index="6">
+<div class="sl-block" data-block-type="drawing" data-name="drawing-7b24fd" data-block-id="1b87e3d01c70247397d7b52ae2a6ee45" style="width: 87.2936px; height: 7.14179px; left: 640px; top: 251.749px;"><div class="sl-block-style" style="z-index: 15; filter: drop-shadow(rgb(28, 235, 123) 0px 0px 5px);"><div class="sl-block-content" data-points="652.89 280.66,655.77 280.66,658.45 280.66,662.35 280.66,665.05 280.66,667.61 280.66,670.4 280.66,672.96 280.66,675.08 280.66,677.79 280.66,679.9 280.66,681.98 280.66,684.02 280.66,686.74 280.66,689.54 280.66,692.25 280.66,695.05 280.32,697.46 280.32,700.06 280.32,702.09 280.32,705.19 280.32,707.99 280.67,710.68 281.46,713.17 281.9,715.42 282.27,717.75 282.34,719.87 282.34,722.67 282.34,725.14 282.34,727.78 282.34,729.96 282.34,732.14 282.34,734.19 282.34" data-timestamp="1644805980699" style="z-index: 15;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="none" width="100%" height="100%" viewbox="650.6600341796875 277.994384765625 82.09967041015625 6.71685791015625"><path fill="rgb(28, 235, 123)" d="M 653.52 278.4037 Q 653.52 278.4 654.8 278.39 656.08 278.38 657.54 278.39 659.01 278.39 661.09 278.41 663.17 278.43 665.87 278.41 668.58 278.39 671.19 278.38 673.8 278.36 676.14 278.34 678.48 278.32 680.67 278.31 682.85 278.29 685.29 278.29 687.74 278.29 690.45 278.26 693.16 278.22 695.71 278.1 698.25 277.97 700.78 278 703.3 278.04 705.95 278.27 708.61 278.51 710.32 278.91 712.04 279.31 714.27 279.61 716.51 279.91 718.69 279.94 720.88 279.96 723.44 279.97 726 279.97 728.44 279.96 730.88 279.95 732.06 280.96 733.24 281.97 732.43 283.29 731.62 284.61 730.18 284.02 728.75 283.43 729.11 281.92 729.47 280.41 731.02 280.53 732.57 280.65 732.69 282.2 732.81 283.75 729.4 284.23 726 284.71 723.43 284.71 720.86 284.72 718.39 284.65 715.92 284.58 713.43 284.21 710.94 283.83 708.47 283.36 705.99 282.9 703.48 282.78 700.96 282.67 698.53 282.68 696.1 282.68 694.36 282.81 692.62 282.93 690.18 282.98 687.74 283.03 685.3 283.03 682.85 283.03 680.67 283.01 678.48 283 676.14 282.98 673.8 282.96 671.19 282.94 668.58 282.93 665.87 282.91 663.17 282.89 661.09 282.91 659.01 282.93 657.54 282.93 656.08 282.94 654.8 282.93 653.52 282.92 653.2 282.92 652.89 282.92 652.54 282.86 652.19 282.81 651.88 282.65 651.56 282.49 651.31 282.24 651.06 281.99 650.9 281.67 650.74 281.36 650.69 281.01 650.63 280.66 650.69 280.31 650.74 279.96 650.9 279.65 651.06 279.33 651.31 279.08 651.56 278.83 651.88 278.67 652.19 278.51 652.54 278.46 652.89 278.4 653.2 278.4 Z"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="drawing" data-name="drawing-51edd5" data-block-id="0ffc71208e170d59c0cfe9d8869c66fe" style="width: 40.1702px; height: 97.6721px; left: 673.093px; top: 140px;"><div class="sl-block-style" style="z-index: 16; filter: drop-shadow(rgb(28, 235, 123) 0px 0px 5px);"><div class="sl-block-content" data-points="701.58 250.79,701.58 248.59,701.58 245.6,701.58 242.65,701.58 239.13,701.58 236.77,701.35 233.76,700.83 231.6,700.07 227.11,699.1 223.17,698.17 220.04,697.42 216.92,696.78 213.68,696.13 210.45,695.49 207.27,694.86 203.83,694.18 200.11,693.8 196.98,693.26 192.92,693.26 188.86,693 186.79,692.74 183.84,692.47 180.89,692.02 178.48,691.88 175.54,691.62 173.32,691.19 171,690.74 168.95,690.34 166.76,690 164.35,690 162.23,688.29 160.92,686.86 162.47,685.81 164.85,685.05 166.73,684.48 168.78,683.62 170.78,683.03 172.73,682.78 170.31,683.58 168.16,684.76 166.34,685.77 164.47,687.9 163.95,693.05 165.64,696.85 166.31,700.36 166.94,703.28 167.53,708.42 168.49,712.48 169.35,714.54 169.87,717.49 170.76,719.52 171.56" data-timestamp="1644805983094" style="z-index: 16;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="none" width="100%" height="100%" viewbox="680.784423828125 161.16433715820312 37.78009033203125 91.86065673828125"><path fill="rgb(28, 235, 123)" d="M 699.3192220052084 250.30875 Q 699.32 250.31 699.3 249.23 699.29 248.15 699.29 246.28 699.3 244.41 699.29 241.36 699.28 238.3 699.06 235.54 698.85 232.77 698.34 229.94 697.82 227.12 697.39 225.28 696.96 223.44 696.51 221.86 696.06 220.29 695.67 218.67 695.28 217.05 694.94 215.41 694.6 213.76 694.27 212.15 693.95 210.54 693.62 208.92 693.3 207.29 692.99 205.54 692.67 203.79 692.37 201.99 692.07 200.19 691.84 198.46 691.61 196.73 691.43 194.71 691.24 192.69 691.15 190.45 691.06 188.21 690.75 185.68 690.44 183.14 690.13 180.78 689.83 178.43 689.66 176.71 689.5 175 689.13 172.84 688.76 170.67 688.39 168.54 688.03 166.4 688.16 164.73 688.29 163.06 688.77 163.34 689.25 163.62 688.53 165.06 687.82 166.49 686.6 169.94 685.38 173.38 684.89 173.96 684.4 174.53 683.66 174.71 682.93 174.89 682.23 174.6 681.53 174.31 681.14 173.67 680.74 173.02 680.79 172.36 680.85 171.7 681.33 169.15 681.82 166.6 683.23 164.74 684.64 162.88 686.6 162.5 688.56 162.13 691.23 162.84 693.91 163.55 695.74 163.92 697.58 164.29 699.28 164.6 700.99 164.92 702.73 165.26 704.47 165.61 706.81 166.12 709.14 166.63 711.39 167.13 713.63 167.63 715.58 168.18 717.53 168.72 718.26 169.88 718.99 171.03 717.97 171.93 716.94 172.84 715.89 171.96 714.84 171.09 715.54 169.92 716.23 168.74 717.5 169.25 718.77 169.75 718.47 171.08 718.17 172.42 715.45 171.97 712.73 171.53 710.56 171.02 708.39 170.52 706.03 170.13 703.66 169.74 701.94 169.41 700.21 169.08 698.5 168.76 696.78 168.44 694.79 168.07 692.79 167.71 690.65 167.13 688.51 166.54 687.15 167.91 685.78 169.29 685.19 171.38 684.61 173.48 684.5 174.01 684.4 174.53 683.66 174.71 682.93 174.89 682.23 174.6 681.53 174.31 681.14 173.67 680.74 173.02 680.8 172.27 680.86 171.52 682.14 168.03 683.41 164.55 684.95 162.44 686.49 160.33 688.82 161.71 691.14 163.08 692.02 165.37 692.91 167.66 693.31 169.95 693.71 172.24 693.95 174.72 694.19 177.19 694.48 179.93 694.77 182.66 695 185.36 695.23 188.07 695.31 190.16 695.39 192.26 695.62 194.22 695.84 196.17 696.06 197.83 696.27 199.48 696.58 201.24 696.89 203.01 697.22 204.73 697.55 206.45 697.86 208.07 698.18 209.69 698.5 211.3 698.82 212.91 699.13 214.49 699.45 216.07 699.8 217.61 700.16 219.15 700.6 220.79 701.05 222.42 701.55 224.37 702.05 226.32 702.68 229.34 703.31 232.35 703.54 235.29 703.78 238.22 703.82 241.32 703.86 244.41 703.87 246.28 703.87 248.15 703.86 249.23 703.84 250.31 703.84 250.55 703.84 250.79 703.79 251.14 703.73 251.49 703.57 251.8 703.41 252.12 703.16 252.37 702.91 252.62 702.59 252.78 702.28 252.94 701.93 253 701.58 253.05 701.23 253 700.88 252.94 700.57 252.78 700.25 252.62 700 252.37 699.75 252.12 699.59 251.8 699.43 251.49 699.37 251.14 699.32 250.79 699.32 250.55 Z"></path></svg></div></div></div>
+</div></div>
+<div class="sl-block" data-block-type="text" data-name="text-a4b2f0" data-block-id="5f9da111f8cff9bc0c461cf19651b7a4" style="height: auto; width: 351.515px; left: 544.243px; top: 69px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; font-size: 61%;" data-fragment-index="6">
+<p><strong>(?&lt;=abc)def</strong>: this pattern is called "<a href="https://stackoverflow.com/questions/2341184/what-does-x-mean-in-regex" target="_blank">positive lookbehind</a>" 👉 looks for "abc" and returns "def" that's behind </p>
+</div></div>
+<div class="sl-block" data-block-type="drawing" data-name="drawing-725e48" data-block-id="df9291846187993ee5b95e925d641275" style="width: 32.3094px; height: 117.172px; left: 833.772px; top: 512.828px;"><div class="sl-block-style" style="z-index: 18; filter: drop-shadow(rgb(28, 235, 123) 0px 0px 5px);"><div class="sl-block-content fragment" data-points="798.19 520.23,800.5 520.48,802.42 521.35,804.79 523.56,806.82 525.79,808.79 528.22,810.06 531.25,810.87 533.28,811.73 536.3,811.83 539.66,811.83 543.42,811.83 547.01,811.83 549.09,811.83 551.25,811.83 553.4,811.83 556.55,811.83 558.64,811.83 562.81,811.83 565.92,811.83 569.04,811.83 573.13,811.83 577.22,811.83 580.87,811.83 584.01,811.83 586.49,811.41 589.39,810.84 591.93,810.27 594.4,809.54 597.6,808.75 600.27,807.87 602.89,806.94 605.6,806.01 608.66,805.12 611.41,804.08 613.63,803.25 615.78,801.9 619.02,801.17 621.72,800.31 624.28,799.51 626.29,797.79 624.97,796.21 621.95,794.9 619.41,793.56 616.74,792.13 614.32,790.35 612.2,791.88 613.84,793.21 615.66,794.58 617.58,796.63 619.86,797.82 621.47,799.22 623.56,801.04 624.48,803.93 623.98,807.72 621.98,811 620.33,814.1 618.78,817.04 617.62,819.15 616.94" data-timestamp="1644806123147" style="z-index: 18;" data-fragment-index="7"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveaspectratio="none" width="100%" height="100%" viewbox="788.4188232421875 517.9920043945312 30.38702392578125 110.2005615234375"><path fill="rgb(28, 235, 123)" d="M 798.944517127813 518.0390895835571 Q 798.94 518.04 800.04 518.22 801.13 518.41 802.46 519.06 803.79 519.72 805.16 520.93 806.53 522.13 807.62 523.34 808.71 524.55 809.69 525.93 810.68 527.31 811.53 529.27 812.38 531.23 813.11 533.72 813.85 536.2 813.94 538.11 814.04 540.01 814.02 541.9 814.01 543.78 814.01 545.69 814.02 547.6 814.06 549.92 814.09 552.23 814.09 554.94 814.1 557.65 814.07 560.35 814.05 563.05 814.04 564.65 814.04 566.24 814.03 567.91 814.03 569.59 813.99 571.58 813.96 573.58 813.94 575.57 813.92 577.56 813.92 579.35 813.92 581.14 813.9 583.06 813.87 584.98 813.62 587.78 813.37 590.58 812.87 592.95 812.37 595.32 811.89 597.19 811.41 599.05 810.54 601.84 809.68 604.64 808.74 607.43 807.8 610.23 806.79 612.88 805.78 615.54 804.78 618.14 803.78 620.74 802.8 623.73 801.82 626.72 801.4 627.29 800.98 627.87 800.3 628.09 799.61 628.3 798.94 628.08 798.26 627.86 797.84 627.28 797.42 626.7 797.05 626.3 796.68 625.89 795.22 624.02 793.77 622.15 791.19 617.9 788.62 613.66 788.47 612.96 788.32 612.27 788.61 611.63 788.9 610.98 789.51 610.63 790.12 610.27 790.82 610.34 791.53 610.42 791.95 610.87 792.37 611.31 794.04 613.16 795.7 615 797.25 616.98 798.8 618.97 800.52 620.22 802.24 621.46 804.64 620.64 807.05 619.82 808.69 619.03 810.33 618.23 811.9 617.49 813.46 616.74 814.92 616.19 816.38 615.64 817.71 616.12 819.03 616.61 818.76 618 818.49 619.38 817.08 619.33 815.67 619.28 815.49 617.88 815.32 616.48 816.68 616.09 818.04 615.7 818.64 616.98 819.23 618.26 817.28 619.46 815.33 620.66 813.8 621.39 812.28 622.13 810.65 622.97 809.01 623.81 806.97 624.82 804.93 625.83 802.89 626.13 800.86 626.42 799.34 625.76 797.82 625.11 796.52 623.54 795.23 621.98 794.11 620.63 793 619.29 791.82 617.71 790.65 616.14 789.7 614.58 788.75 613.03 788.54 612.65 788.32 612.27 788.61 611.63 788.9 610.98 789.51 610.63 790.12 610.27 790.82 610.34 791.53 610.42 792.05 610.89 792.58 611.36 794.5 614.39 796.42 617.42 797.58 619.75 798.74 622.07 799.64 624.39 800.55 626.7 800.76 627.28 800.98 627.87 800.3 628.09 799.61 628.3 798.94 628.08 798.26 627.86 797.84 627.28 797.42 626.7 797.43 625.98 797.43 625.27 798.6 621.86 799.77 618.46 800.69 616.08 801.6 613.71 802.56 611.24 803.53 608.77 804.45 606.01 805.38 603.25 806.22 600.59 807.05 597.94 807.52 596.13 807.98 594.32 808.49 592.12 809 589.91 809.31 587.38 809.61 584.84 809.67 582.99 809.74 581.14 809.74 579.35 809.74 577.56 809.72 575.57 809.7 573.58 809.67 571.58 809.63 569.59 809.63 567.91 809.62 566.24 809.62 564.65 809.61 563.05 809.59 560.35 809.56 557.65 809.57 554.94 809.57 552.23 809.6 549.92 809.64 547.61 809.64 545.71 809.64 543.8 809.61 542.01 809.58 540.22 809.22 537.71 808.87 535.21 808.04 532.82 807.22 530.44 805.56 528.26 803.89 526.07 802.29 524.68 800.69 523.29 799.57 522.91 798.45 522.53 798.19 522.5 797.94 522.48 797.6 522.38 797.26 522.29 796.96 522.09 796.67 521.9 796.45 521.62 796.23 521.35 796.1 521.02 795.98 520.69 795.96 520.33 795.94 519.98 796.04 519.64 796.13 519.3 796.33 519 796.52 518.71 796.8 518.49 797.07 518.27 797.4 518.14 797.73 518.02 798.09 518 798.44 517.98 798.69 518.01 Z"></path></svg></div></div></div>
+<div class="sl-block" data-block-type="text" data-name="text-2862d5" data-block-id="9d05fab41362d20eab698173cc29a514" style="height: auto; width: 257.629px; left: 608.452px; top: 641px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; font-size: 61%;" data-fragment-index="7">
+<p>cumbersome code i wrote for a data etl pipeline</p>
+</div></div></section><section data-id="5df47d1922928d428a676c975c6e5ee0"><div class="sl-block" data-block-type="text" style="width: 384px; left: 48px; top: 105px; height: auto;" data-block-id="cf81a17d74e2a01e0b16a1e972779128"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<h2>hw4 prompts</h2>
+</div></div>
+<div class="sl-block" data-block-type="iframe" data-name="iframe-7ee583" data-block-id="937dad74c4fba23fd0a7b318f0aa155f" style="width: 775px; height: 491px; left: 92.5px; top: 186px;"><div class="sl-block-content" style="z-index: 11;"><iframe allowfullscreen="" allow="fullscreen" data-src="https://drive.google.com/file/d/1pqzZ7FdKxl_ZsXj04sNKu4GYT3TaeAUQ/preview" sandbox="allow-forms allow-scripts allow-popups allow-same-origin allow-pointer-lock allow-presentation"></iframe></div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":2339676,"slug":"cogsci131_02_07_section-21888a","title":"cogsci131_02_14_section","description":"","width":960,"height":700,"margin":0.05,"visibility":"all","published_at":"2022-02-13T22:32:57.340Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/93a06848a02bdb148123878ced8ee31a/thumb.jpg?1644795373","view_count":0,"user":{"id":1304426,"username":"yuanmeng-1","name":"Yuan Meng","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a-/AOh14GiwxvGSaiggZl-tNwJWFLuEdLMQS-zeQzdmldJU7w","account_type":"pro","team_id":null,"settings":{"id":5181623,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"sketch","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":true,"slide_count":6,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":3,"data_updated_at":1644806363576,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"notes":{}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.js"></script>
+		<script src="lib/reveal-plugins.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: true,
+				fragmentInURL: true,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				autoAnimateMatcher: SL.deck.AutoAnimate.matcher,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+				navigationMode: "default",
+
+				transition: "slide",
+				backgroundTransition: "slide",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				plugins: [ RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight ]
+			});
+		</script>
+
+		
+
+	</body>
+</html>
