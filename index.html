@@ -144,30 +144,29 @@
 </div>
 
 <div class="sl-block" data-block-type="text" data-name="text-99f7d1" data-block-id="86000401ce49f16fe688936bcd1c23df" style="height: auto; width: 506.545px; left: 10.924px; top: 203.62px;">
-    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 67%;" dir="ui">
-<ul>
-	<li class="fragment" data-fragment-index="0" style="text-align:left">
-<span style="font-size:1.0em"><strong>match = re.search(pattern, string)</strong></span>
-	<ul>
-		<li class="fragment" data-fragment-index="1" style="text-align:left"><span style="font-size:0.9em"><strong>how regex "thinks"</strong>: starts from <em>leftmost</em> match + uses as much as of the string possible (<em>"greedy"</em>)</span></li>
-		<li class="fragment" data-fragment-index="2" style="text-align:left"><span style="font-size:0.9em"><strong>success </strong>(<strong>if match</strong> returns True) 👉 can use match.group() to return matching text; <strong>failure </strong>(<strong>if match</strong> returns False): returns None</span></li>
-	</ul>
-	</li>
-	<li class="fragment" data-fragment-index="3" style="text-align:left">
-<span style="font-size:1.0em"><strong>occurrence</strong><strong>: r"</strong><strong>pattern</strong><strong>" </strong>(pass raw strings)</span>
-	<ul>
-		<li class="fragment" data-fragment-index="4" style="text-align:left"><span style="font-size:0.9em"><strong>literal matching</strong>: "ordinary" characters match themselves 👉 not ordinary: <span style="color:#FF8C00">^$*+?{[]\|()}</span></span></li>
-		<li class="fragment" data-fragment-index="5" style="text-align:left"><span style="font-size:0.9em"><strong>also special</strong>: <span style="color:#FF8C00">\t</span> (tab), <span style="color:#FF8C00">\n</span> (newline), <span style="color:#FF8C00">\r</span> (return)</span></li>
-		<li class="fragment" data-fragment-index="6" style="text-align:left"><span style="font-size:0.9em"><strong>make any character ordinary</strong>: <span style="color:#FF8C00">\</span> (e.g., \^)</span></li>
-		<li class="fragment" data-fragment-index="7" style="text-align:left"><span style="font-size:0.9em"><strong>any single character</strong>: <span style="color:#FF8C00">.</span> (period)</span></li>
-		<li class="fragment" data-fragment-index="8" style="text-align:left"><span style="font-size:0.9em"><strong>any particular type of character</strong>: <span style="color:#FF8C00">\w</span> (<span style="color:rgb(0, 0, 0); text-align:left">letter, digit, or _), </span><span style="color:#FF8C00"><span style="text-align:left">\s</span></span><span style="color:rgb(0, 0, 0); text-align:left"> (white space), </span><span style="color:#FF8C00"><span style="text-align:left">\d</span></span><span style="color:rgb(0, 0, 0); text-align:left"> (decimal digit)</span></span></li>
-		<li class="fragment" data-fragment-index="9" style="text-align:left"><span style="font-size:0.9em"><strong>specify location</strong>: <span style="color:#FF8C00">^</span> (start), <span style="color:#FF8C00">$</span> (end)</span></li>
-	</ul>
-	</li>
-	<li class="fragment" data-fragment-index="10" style="text-align:left"><span style="font-size:1.0em"><strong>repetitions</strong>: <span style="color:#FF8C00">+</span> (1 or more), <span style="color:#FF8C00">*</span> (0 or more), <span style="color:#FF8C00">?</span> (0 or 1)</span></li>
-	<li class="fragment" data-fragment-index="11" style="text-align:left"><span style="font-size:1.0em"><strong>not sure? </strong>use set <span style="color:#FF8C00">[abc]</span> or <span style="color:#FF8C00">a|b|c</span> 👉 match 'a', 'b', or 'c'</span></li>
+    <div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 67%;" dir="ui"><ul>
+<li data-fragment-index="0" style="text-align:left" class="fragment">
+<span style="font-size:1.0em"><strong>match = re.search(pattern, string)</strong></span><ul>
+<li data-fragment-index="1" style="text-align:left" class="fragment"><span style="font-size:0.9em"><strong>how regex "thinks"</strong>: starts from <em>leftmost</em> match + uses as much as of the string possible (<em>"greedy"</em>)</span></li>
+<li data-fragment-index="2" style="text-align:left" class="fragment">
+<span style="font-size:0.9em"><strong>success </strong>(<strong>if match</strong> returns True) 👉 can use match.group() to return matching text; <strong>failure </strong>(<strong>if match</strong> returns False) </span><span style="color:rgb(0, 0, 0); font-size:18.09px; text-align:left">👉</span><span style="font-size:0.9em"> returns None</span>
+</li>
 </ul>
-</div>
+</li>
+<li data-fragment-index="3" style="text-align:left" class="fragment">
+<span style="font-size:1.0em"><strong>occurrence</strong><strong>: r"</strong><strong>pattern</strong><strong>" </strong>(pass raw strings)</span><ul>
+<li data-fragment-index="4" style="text-align:left" class="fragment"><span style="font-size:0.9em"><strong>literal matching</strong>: "ordinary" characters match themselves 👉 not ordinary: <span style="color:#FF8C00">^$*+?{[]\|()}</span></span></li>
+<li data-fragment-index="5" style="text-align:left" class="fragment"><span style="font-size:0.9em"><strong>also special</strong>: <span style="color:#FF8C00">\t</span> (tab), <span style="color:#FF8C00">\n</span> (newline), <span style="color:#FF8C00">\r</span> (return)</span></li>
+<li data-fragment-index="6" style="text-align:left" class="fragment"><span style="font-size:0.9em"><strong>make any character ordinary</strong>: <span style="color:#FF8C00">\</span> (e.g., \^)</span></li>
+<li data-fragment-index="7" style="text-align:left" class="fragment"><span style="font-size:0.9em"><strong>any single character</strong>: <span style="color:#FF8C00">.</span> (period)</span></li>
+<li data-fragment-index="8" style="text-align:left" class="fragment"><span style="font-size:0.9em"><strong>any particular type of character</strong>: <span style="color:#FF8C00">\w</span> (<span style="color:rgb(0, 0, 0); text-align:left">letter, digit, or _), </span><span style="color:#FF8C00"><span style="text-align:left">\s</span></span><span style="color:rgb(0, 0, 0); text-align:left"> (white space), </span><span style="color:#FF8C00"><span style="text-align:left">\d</span></span><span style="color:rgb(0, 0, 0); text-align:left"> (decimal digit)</span></span></li>
+<li data-fragment-index="9" style="text-align:left" class="fragment"><span style="font-size:0.9em"><strong>specify location</strong>: <span style="color:#FF8C00">^</span> (start), <span style="color:#FF8C00">$</span> (end)</span></li>
+</ul>
+</li>
+<li data-fragment-index="10" style="text-align:left" class="fragment"><span style="font-size:1.0em"><strong>repetitions</strong>: <span style="color:#FF8C00">+</span> (1 or more), <span style="color:#FF8C00">*</span> (0 or more), <span style="color:#FF8C00">?</span> (0 or 1)</span></li>
+<li data-fragment-index="11" style="text-align:left" class="fragment"><span style="font-size:1.0em"><strong>not sure? </strong>use set <span style="color:#FF8C00">[abc]</span> or <span style="color:#FF8C00">a|b|c</span> 👉 match 'a', 'b', or 'c'</span></li>
+</ul></div>
+<grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 12;" class="cGcvT"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" style="mix-blend-mode: darken; position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 12;" class="cGcvT"></grammarly-extension>
     <grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 12;" class="cGcvT"></grammarly-extension>
     <grammarly-extension data-grammarly-shadow-root="true" style="mix-blend-mode: darken; position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 12;" class="cGcvT"></grammarly-extension>
     <grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none; z-index: 12;" class="cGcvT"></grammarly-extension>
@@ -294,7 +293,7 @@ simplified = suffixes.sub("", full_name.lower())</code></pre>
 		</div>
 
 		<script>
-			var SLConfig = {"deck": {"id":2339676,"slug":"cogsci131_02_07_section-21888a","title":"cogsci131_02_14_section","description":"","width":960,"height":700,"margin":0.05,"visibility":"all","published_at":"2022-02-13T22:32:57.340Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/93a06848a02bdb148123878ced8ee31a/thumb.jpg?1644795373","view_count":0,"user":{"id":1304426,"username":"yuanmeng-1","name":"Yuan Meng","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a-/AOh14GiwxvGSaiggZl-tNwJWFLuEdLMQS-zeQzdmldJU7w","account_type":"pro","team_id":null,"settings":{"id":5181623,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"sketch","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":true,"slide_count":6,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":3,"data_updated_at":1644857228388,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"notes":{}}};
+			var SLConfig = {"deck": {"id":2339676,"slug":"cogsci131_02_07_section-21888a","title":"cogsci131_02_14_section","description":"","width":960,"height":700,"margin":0.05,"visibility":"all","published_at":"2022-02-13T22:32:57.340Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/93a06848a02bdb148123878ced8ee31a/thumb.jpg?1644795373","view_count":0,"user":{"id":1304426,"username":"yuanmeng-1","name":"Yuan Meng","description":null,"thumbnail_url":"https://lh3.googleusercontent.com/a-/AOh14GiwxvGSaiggZl-tNwJWFLuEdLMQS-zeQzdmldJU7w","account_type":"pro","team_id":null,"settings":{"id":5181623,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"slide","transition":"slide","theme_id":null,"theme_font":"sketch","theme_color":"white-blue","auto_slide_interval":0,"comments_enabled":false,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":true,"slide_count":6,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":3,"data_updated_at":1644857786736,"font_typekit":null,"font_google":null,"time_limit":null,"navigation_mode":"default","upsizing_enabled":true,"notes":{}}};
 
 
 			// Use local fonts
